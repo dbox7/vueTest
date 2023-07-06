@@ -1,8 +1,7 @@
 <template>
-  <list-items 
-    v-bind:items="items"
-    v-bind:callback="edit"
-  />
+  <h1>List of something</h1>
+  <hr>
+  <list-items :items="items"/>
 </template>
 
 <script>
@@ -24,9 +23,17 @@ export default {
 <style>
   * {
     box-sizing: border-box;
+    margin: 0;
+    font-family: Roboto;
   }
 
   h3 {
     margin: 0;
+  }
+
+  h1 {
+    text-align: center;
+    margin: 15px;
+    text-transform: uppercase;
   }
 </style>
